@@ -10,11 +10,11 @@ It can make the user enable to check my ranking of the follower counts based on 
 
 ## Usage
 ### Get followers by user id
-```python
+```console
 >python crawler/user_info.py get_followers ${user id}
 ```
 example
-```python
+```console
 >python crawler/user_info.py get_followers zuck
 ```
 
