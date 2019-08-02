@@ -1,6 +1,9 @@
 import requests
+import sys
 
 BASIC_URI = "https://instagram.com"
+SEARCH_API = "/web/search/topsearch/"
+QUERY = "?query={}"
 KEY_OF_FOLLOWERS = "userInteractionCount"
 ENCODING = "utf-8"
 
@@ -25,3 +28,9 @@ def get_followers(user_id: str) -> int:
         return int(follower_str)
     else:
         raise KeyError("No Such Key in the content - " + KEY_OF_FOLLOWERS)
+
+
+if __name__ == '__main__':
+    method = sys.argv[1]
+    if method == 'get_followers':
+        print(get_followers(sys.argv[2]))
