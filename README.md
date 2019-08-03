@@ -18,6 +18,15 @@ example
 >python crawler/user_info.py get_followers zuck
 ```
 
+### Search related users by keyword
+```console
+>python crawler/user_info.py get_related_users_by ${user id}
+```
+example
+```console
+>python crawler/user_info.py get_related_users_by zuck
+```
+
 ## LICENSE
 
 [MIT](./LICENSE)
